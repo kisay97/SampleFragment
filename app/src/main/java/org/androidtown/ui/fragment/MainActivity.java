@@ -19,9 +19,10 @@ public class MainActivity extends ActionBarActivity implements SampleListFragmen
         setContentView(R.layout.activity_main);
     }
 
+    @Override
     public void onListItemSelected(int index) {
-        SampleViewerFragment imageViewer = (SampleViewerFragment) getSupportFragmentManager().findFragmentById(R.id.image_viewer_fragment);
-        imageViewer.update(index);
+            SampleViewerFragment imageViewer = (SampleViewerFragment) getSupportFragmentManager().findFragmentById(R.id.image_viewer_fragment);
+            imageViewer.update(index);
     }
 
 
